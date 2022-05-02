@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="demo.css">
+
+<script type="text/javascript" src="script1.js"></script>
+<style>
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: outline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+</style>
+
+</head>
+<body onload="document.form1.firstname.focus()">
+<h3>Registration Form</h3>
+
+<div>
+  <form name="form1" action="chiru.jsp" onsubmit="return validate()" onreset="myFunction()">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." onblur="myFunction1()">
+
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." onblur="myFunction2()">
+
+    <label for="Fathername">Father Name</label>
+    <input type="text" id="Fathername" name="Fathername" placeholder="Your Father name.." onblur="myFunction3()">
+    
+    <label for="Empid">Employee Id</label>
+    <input type="text" id="Empid" name="Employeeid" placeholder="Your employee id" onblur="myFunction4()">
+    
+<label class="paylabel" for="countrytype">Country:</label>
+<select id="countrytype" name="country">
+    <option value="selectcountry">--- Please select ---</option>
+    <option value="India">India</option>
+    <option value="Srilanka">Srilanka</option>
+    <option value="Pakistan">Pakistan</option>
+    <option value="Russia">Russia</option>
+    <option value="Japan">Japan</option>
+    <option value="Swiss">Swiss</option>
+    <option value="Nepal">Nepal</option>
+</select><br/>
+
+
+    <input type="submit" value="Submit">
+   <input type="reset" value="Reset">
+
+  </form>
+</div>
+</body>
+</html>
